@@ -121,7 +121,7 @@
 	//	Until you edit this function, don't show login, register or logout links
 
 		return array(
-			'login' => 'http://forum.ubuntu-vn.org/ucp.php?mode=login',
+			'login' => 'http://forum.ubuntu-vn.org/ucp.php?mode=login&redirect=.%2Faskubuntu.php',
 			'register' => 'http://forum.ubuntu-vn.org/ucp.php?mode=register',
 			'logout' => 'http://forum.ubuntu-vn.org/ucp.php?mode=logout&sid=' . $data['session_id']
 		);
