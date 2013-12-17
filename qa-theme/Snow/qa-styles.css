@@ -58,8 +58,9 @@
 	line-height:20px;
 }
 body {
-	background:#eee url(images/bodybg.jpg)repeat left top;
+	background:#eee url(images/bg-site.png)repeat left top;
 	text-align:center;
+	font-family:'UbuntuRegular',Ubuntu,'Bitstream Vera Sans','DejaVu Sans',Tahoma,sans-serif
 	margin:0;
 	padding:0;
 }
@@ -69,7 +70,7 @@ body,td,input,textarea {
 }
 a:link, a:visited {
 	text-decoration:none;
-	color:#0179b5;
+	color:#DD4814;
 }
 a:hover, a:active{
 	color:#0179b5;
@@ -97,7 +98,7 @@ input[type="text"],input[type="password"],textarea,select,checkbox,radio{
 }
 input[type="text"]:focus,input[type="password"]:focus,textarea:focus{
 	box-shadow:0 2px 2px 0 rgba(0,0,0,0.3) inset;	
-	border:1px solid #00AAFF !important;
+	border:1px solid #77216F !important;
 	color:#333;
 	line-height: normal;
 	-moz-transition:box-shadow ease-in-out 0.2s, border ease-in-out 0.2s;
@@ -363,7 +364,7 @@ input[type="submit"].qa-search-button:hover{
 	border-left:1px solid #aaa;
 }
 .qa-nav-user-link {
-	color:#3B5998 !important;
+	color:#772953 !important;
 }
 .qa-nav-user-register{
 	border-left:none;
@@ -464,7 +465,7 @@ div.header-banner{
 	list-style:none;
 	margin:0;
 	padding:0;
-	font-family:Arial,Helvetica,sans-serif;
+	font-family:'UbuntuRegular',Ubuntu,'Bitstream Vera Sans','DejaVu Sans',Tahoma,sans-serif
 }
 .qa-nav-main-item,.qa-nav-main-item-opp {
 }
@@ -494,7 +495,7 @@ div.header-banner{
 }
 .qa-nav-main-link:hover,.qa-nav-main-selected {
 	text-decoration:none;
-	color:#006699 !important;
+	color:#DD4814 !important;
 	-moz-transition:all ease-in-out 0.2s;
 	-webkit-transition:all ease-in-out 0.2s;
 	-o-transition:all ease-in-out 0.2s;
@@ -596,8 +597,8 @@ div.header-banner{
 	color:#000;
 }
 .qa-ask-box{
-	background:#0087CA;
-	border:1px solid #005782;
+	background:#DD4814;
+	border:1px solid #FFFFFF;
 	border-radius: 3px;
 }
 .qa-ask-box .qa-form-tall-label{
@@ -975,7 +976,7 @@ background:#f8f8f8;
 	margin:0 !important;
 	padding:20px 20px 5px !important;
 	background: none;
-	color: #111;
+	color: #333;
 	border-radius:0;
 	box-shadow: none;
 	font-size: 18px;
@@ -1544,7 +1545,7 @@ padding:6px 16px 6px 12px;
 background:#fff;
 }
 .qa-top-users-score {
-background:#0179b5;
+background:#772953;
 color:#fff;
 font-weight:bold;
 text-align:right;
@@ -2013,7 +2014,7 @@ padding:10px;
 }
 /* Classes passed to theme */
 .qa-user-link {
-	color:#3B5998 !important;
+	color:#2C001E !important;
 	font-weight:700;
 }
 .qa-category-link {

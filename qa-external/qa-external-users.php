@@ -240,16 +240,24 @@
 			$userid = $data['user_id'];
 
 			$qa_db_connection=qa_db_connection();
-			$result = mysql_query("SELECT user_email, username FROM phpbb_users WHERE user_id='".mysql_real_escape_string($userid)."'");
+			$result = mysql_query("SELECT user_email, username, group_id, user_avatar FROM phpbb_users WHERE user_id='".mysql_real_escape_string($userid)."'");
 			while ($row = mysql_fetch_assoc($result)){
-				if (is_array($row))
+				if (is_array($row)){
+					$level = QA_USER_LEVEL_BASIC;
+					$groupid = $row['group_id'];
+					if ($groupid == 24 || $groupdid == 14) {
+						$level = QA_USER_LEVEL_ADMIN; 
+					} else if ($groupid = 13) {
+						$level = QA_USER_LEVEL_MODERATOR;
+					}
 					return array(
 						'userid' => $userid,
 						'publicusername' => $row['username'],
 						'avatar' => $row['user_avatar'],
 						'email' => $row['user_email'],
-						'level' => ($userid==54) ? QA_USER_LEVEL_ADMIN : QA_USER_LEVEL_BASIC
+						'level' => $level,
 					);
+				}
 			}
 			
 		}
