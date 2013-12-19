@@ -245,7 +245,7 @@
 				if (is_array($row)){
 					$level = QA_USER_LEVEL_BASIC;
 					$groupid = $row['group_id'];
-					if ($groupid == 24 || $groupdid == 14) {
+					if ($groupid == 24 || $groupid == 14) {
 						$level = QA_USER_LEVEL_ADMIN; 
 					} else if ($groupid == 13) {
 						$level = QA_USER_LEVEL_MODERATOR;
